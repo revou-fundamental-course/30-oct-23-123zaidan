@@ -1,0 +1,57 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Warna latar belakang putih */
+}
+
+h1 {
+    text-align: center;
+    color: #d32f2f; /* Warna teks merah */
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #d32f2f; /* Warna teks merah */
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d32f2f; /* Border merah pada input */
+}
+
+button {
+    background-color: #d32f2f; /* Warna latar belakang merah */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Efek perubahan warna latar belakang saat hover */
+}
+
+button:hover {
+    background-color: #fff; /* Warna latar belakang putih saat hover */
+    color: #d32f2f; /* Warna teks merah saat hover */
+}
+
+#result {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid #d32f2f; /* Border merah pada hasil */
+    padding: 20px;
+    background-color: #fff;
+}
+
+img {
+    max-width: 200px; /* Atur lebar maksimum logo */
+    display: block; /* Membuat logo tampil sebagai blok agar dapat diatur dengan CSS */
+    margin: 0 auto; /* Posisikan logo di tengah halaman */
+}

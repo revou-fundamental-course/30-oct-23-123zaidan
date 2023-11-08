@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <img src="https://www.umm.ac.id/files/file/umm%20gold%20(3)(1).png" alt="Logo Kalkulator BMI">
+
+    <h1>Kalkulator BMI</h1>
+    <form id="bmiForm">
+        <label for="gender">Jenis Kelamin:</label>
+        <select id="gender">
+            <option value="pria">Pria</option>
+            <option value="wanita">Wanita</option>
+        </select>
+        <label for="weight">Berat Badan (kg):</label>
+        <input type="number" id="weight" required>
+        <label for="age">Usia (tahun):</label>
+        <input type="number" id="age" required>
+        <label for="height">Tinggi Badan (cm):</label>
+        <input type="number" id="height" required>
+        <button type="button" id="calculate">Hitung BMI</button>
+    </form>
+    <div id="result">
+        <p>Hasil BMI:</p>
+        <p id="bmiValue"></p>
+        <p id="bmiCategory"></p>
+        <p id="recommendation"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
