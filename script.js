@@ -36,30 +36,38 @@ document.getElementById('calculate').addEventListener('click', function () {
     }
 
     document.getElementById('recommendation').textContent = recommendation;
+});
 
-    // Siapkan data untuk dikirim ke server
-    const data = {
-        gender,
-        weight,
-        age,
-        height,
-        hasilBMI: bmi // Menggunakan nilai BMI yang telah dihitung
-    };
+// Event listener untuk tombol unduh
+document.getElementById('download').addEventListener('click', function () {
+    var gender = document.getElementById('gender').value;
+    var weight = document.getElementById('weight').value;
+    var age = document.getElementById('age').value;
+    var height = document.getElementById('height').value;
+    var bmiValue = document.getElementById('bmiValue').textContent;
+    var bmiCategory = document.getElementById('bmiCategory').textContent;
+    var recommendation = document.getElementById('recommendation').textContent;
 
-    // Kirim data ke server
-    fetch('/simpan-data', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-    })
-    .then(response => response.json())
-    .then(responseData => {
-        console.log(responseData);
-        // Lakukan tindakan setelah data berhasil disimpan
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
+    // Isi file yang akan diunduh
+    var content = "Hasil Perhitungan BMI\n";
+    content += "Jenis Kelamin: " + gender + "\n";
+    content += "Berat Badan: " + weight + " kg\n";
+    content += "Tinggi Badan: " + height + " cm\n";
+    content += "Usia: " + age + " tahun\n";
+    content += bmiValue + "\n";
+    content += bmiCategory + "\n";
+    content += recommendation + "\n";
+
+    // Buat Blob dari string
+    var blob = new Blob([content], {type: "text/plain;charset=utf-8"});
+
+    // Buat link untuk unduh
+    var downloadLink = document.createElement('a');
+    downloadLink.href = window.URL.createObjectURL(blob);
+    downloadLink.download = "Hasil_BMI.txt";
+
+    // Simulasikan klik pada link
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
 });
