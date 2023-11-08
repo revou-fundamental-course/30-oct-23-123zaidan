@@ -1,57 +1,81 @@
-/* style.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff; /* Warna latar belakang putih */
-}
-
-h1 {
     text-align: center;
-    color: #d32f2f; /* Warna teks merah */
-}
-
-form {
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    color: #d32f2f; /* Warna teks merah */
-}
-
-input, select {
-    width: 100%;
+  }
+  
+  header {
+    background-color: #5c5edc;
+    display: flex;
+  }
+  
+  header img {
+    height: 75px;
+    float: left;
+  }
+  
+  #bmi-desc1 {
+    text-align: left;
+  }
+  
+  #bmi-form,
+  #bmi-result {
+    margin: 20px;
     padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #d32f2f; /* Border merah pada input */
-}
-
-button {
-    background-color: #d32f2f; /* Warna latar belakang merah */
-    color: #fff;
-    border: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #d0caca;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  input,
+  button {
+    margin: 5px;
+    border-style: none;
+  }
+  
+  button {
+    background-color: #5c5edc;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color: #ccc;
+  }
+  
+  #bmi-desc2 {
+    text-align: left;
+  }
+  
+  #bmi-result {
+    display: none;
+  }
+  
+  #bmi-cons a {
+    text-decoration: none;
+  }
+  .button {
+    display: inline-block;
     padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Efek perubahan warna latar belakang saat hover */
-}
-
-button:hover {
-    background-color: #fff; /* Warna latar belakang putih saat hover */
-    color: #d32f2f; /* Warna teks merah saat hover */
-}
-
-#result {
-    max-width: 400px;
-    margin: 0 auto;
-    margin-top: 20px;
-    border: 1px solid #d32f2f; /* Border merah pada hasil */
-    padding: 20px;
+    margin-right: 10px;
+  }
+  
+  .button:hover {
     background-color: #fff;
-}
-
-img {
-    max-width: 200px; /* Atur lebar maksimum logo */
-    display: block; /* Membuat logo tampil sebagai blok agar dapat diatur dengan CSS */
-    margin: 0 auto; /* Posisikan logo di tengah halaman */
-}
+    color: #333;
+    transition: 1.5s;
+    border-style: solid;
+  }
