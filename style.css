@@ -4,7 +4,7 @@ body {
   }
   
   header {
-    background-color: #5c5edc;
+    background-color: #5cbedc;
     display: flex;
   }
   
@@ -43,7 +43,7 @@ body {
   }
   
   button {
-    background-color: #5c5edc;
+    background-color: #dc5c7c;
     width: 100px;
     height: 30px;
     border-radius: 5px;
@@ -64,7 +64,7 @@ body {
   .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #ff002b;
     color: #fff;
     text-decoration: none;
     border: none;
