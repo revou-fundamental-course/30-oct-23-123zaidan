@@ -1,8 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-  }
-  
+  background-image: url('http://www.umm.ac.id/files/image/DJI_0135-copy.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body {
+  font-family: 'YourChosenFont', sans-serif;
+}
+
   header {
     background-color: #5cbedc;
     display: flex;
@@ -13,21 +18,24 @@ body {
     float: left;
   }
   
-  #bmi-desc1 {
-    text-align: left;
+  #bmi-desc1 p {
+    background-color: rgba(56, 56, 53, 0.5); /* Warna merah dengan tingkat transparansi */
+    padding: 10px; /* Tambahkan padding agar background lebih terlihat */
+    color: white;
   }
   
   #bmi-form,
-  #bmi-result {
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #d0caca;
-  }
+#bmi-result {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(208, 202, 202, 0.8); /* R, G, B, Alpha */
+}
+
   
   h1 {
-    color: #333;
+    text-shadow: 2px 2px 4px #fffcfc;
   }
   
   label {
@@ -50,8 +58,10 @@ body {
     color: #ccc;
   }
   
-  #bmi-desc2 {
-    text-align: left;
+  #bmi-desc2 p {
+    background-color: rgba(56, 56, 53, 0.5); /* Warna merah dengan tingkat transparansi */
+    padding: 10px; /* Tambahkan padding agar background lebih terlihat */
+    color: white;
   }
   
   #bmi-result {
@@ -79,3 +89,36 @@ body {
     transition: 1.5s;
     border-style: solid;
   }
+  
+  #registrationForm {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(208, 202, 202, 0.8); /* R, G, B, Alpha */
+  }
+  
+  #follow-me {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #405de6;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #follow-me a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  #follow-me img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  
